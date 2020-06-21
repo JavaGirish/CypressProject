@@ -1,0 +1,15 @@
+{
+  "name": "demoproject",
+  "version": "1.0.0",
+  "description": "Cypress Demo Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cypress:open": "cypress open"
+  },
+  "author": "Girish Nair",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.8.0"
+  }
+}
