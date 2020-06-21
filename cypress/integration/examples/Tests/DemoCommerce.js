@@ -7,11 +7,4 @@ cy.get("[alt='nopCommerce demo store']").should('be.visible');
 
 })
 
-
-
-
-
-
-
-
 })
