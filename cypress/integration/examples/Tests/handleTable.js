@@ -13,6 +13,19 @@ it('Validate entry present in table', function() {
 
 })
 
+it('Check value using filter option', function() {
+
+cy.get('input.form-control').eq(1).type('1',{force: true});
+cy.get('.table:nth-child(2)').find('td').eq(0).should('have.text','1');
+cy.get('.table').eq(1).find('td').eq(1).should('have.text','markino');
+cy.get('.table').eq(1).find('td').eq(2).should('have.text','Zieko');
+cy.get('.table').eq(1).find('td').eq(3).should('have.text','Samuels');
+
+
+
+})
+
+
 
 
 })
