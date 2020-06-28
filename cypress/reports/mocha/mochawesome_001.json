@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-28T12:18:54.563Z",
+    "end": "2020-06-28T12:20:02.405Z",
+    "duration": 67842,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2d3d3799-c1a2-4ff9-a822-3c9d66871207",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\ReportTests\\Mouseactions.js",
+      "file": "cypress\\integration\\examples\\ReportTests\\Mouseactions.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "abec06e0-2306-4ae2-9603-b4103c278636",
+          "title": "Mouse actions using Trigger",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "MemberLogin using mousehover",
+              "fullTitle": "Mouse actions using Trigger MemberLogin using mousehover",
+              "timedOut": null,
+              "duration": 38665,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.spicejet.com/');\ncy.get('#ctl00_HyperLinkLogin').trigger('mouseover');\ncy.contains('SpiceClub Members').trigger('mouseover');\ncy.contains('Member Login').click({\n  force: true\n});\ncy.get('.signup-link.buttonN').should('be.visible').click();",
+              "err": {},
+              "uuid": "7ac21cc2-0931-4ebd-b41e-652ec88fd094",
+              "parentUUID": "abec06e0-2306-4ae2-9603-b4103c278636",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "SignUp using mousehover",
+              "fullTitle": "Mouse actions using Trigger SignUp using mousehover",
+              "timedOut": null,
+              "duration": 19893,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.spicejet.com/');\ncy.get('#ctl00_HyperLinkLogin').should('be.visible').trigger('mouseover');\ncy.contains('SpiceClub Members').trigger('mouseover');\ncy.contains('Sign up').invoke('show').click();\ncy.wait(3000);",
+              "err": {},
+              "uuid": "816d2381-ab98-4bae-9dcb-18290b2ad872",
+              "parentUUID": "abec06e0-2306-4ae2-9603-b4103c278636",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7ac21cc2-0931-4ebd-b41e-652ec88fd094",
+            "816d2381-ab98-4bae-9dcb-18290b2ad872"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 58558,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
